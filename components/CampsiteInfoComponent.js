@@ -1,3 +1,4 @@
+import * as Animatable from 'react-native-animatable';
 import React, { Component } from 'react';
 import { Button, FlatList, Modal, ScrollView, StyleSheet, Text, View } from 'react-native';
 import { Card, Icon, Input, Rating } from 'react-native-elements';
@@ -24,6 +25,7 @@ function RenderCampsite(props) {
 
     if (campsite) {
         return (
+            <Animatable.View animation='fadeInDown' duration={2000} delay={1000}>
             <Card
                 featuredTitle={campsite.name}
                 image={{uri: baseUrl + campsite.image}}>
@@ -50,6 +52,7 @@ function RenderCampsite(props) {
                         />
                     </View>
                 </Card>
+            </Animatable.View>
         );
     }
 
@@ -74,6 +77,7 @@ function RenderComments({comments}) {
     };
 
     return (
+        <Animatable.View animation='fadeInDown' duration={2000} delay={1000}>
         <Card title="Comments">
             <FlatList
                 data={comments}
@@ -81,6 +85,7 @@ function RenderComments({comments}) {
                 keyExtractor={item => item.id.toString()}
             />
         </Card>
+        </Animatable.View>
     );
 }
 
