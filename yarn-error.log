@@ -1,5 +1,5 @@
 Arguments: 
-  /usr/local/bin/node /usr/local/bin/yarn add expo-secure-store@7.0.0
+  /usr/local/bin/node /usr/local/bin/yarn add expo-mail-composer@7.0.0
 
 PATH: 
   /Users/allisons/Library/Android/sdk/platform-tools:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Users/allisonpereira/Library/platform-tools
@@ -14,7 +14,7 @@ Platform:
   darwin x64
 
 Trace: 
-  Error: EACCES: permission denied, unlink '/Users/allisonpereira/Desktop/NucampFolder/4-React-Native/nucampsite/node_modules/.bin/atob'
+  Error: EACCES: permission denied, unlink '/Users/allisonpereira/Desktop/NucampFolder/4-React-Native/nucampsite/node_modules/.bin/browserslist'
 
 npm manifest: 
   {
